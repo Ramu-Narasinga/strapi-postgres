@@ -4,7 +4,8 @@
   "info": {
     "singularName": "question",
     "pluralName": "questions",
-    "displayName": "question"
+    "displayName": "question",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,27 @@
       "relation": "manyToMany",
       "target": "api::quiz.quiz",
       "inversedBy": "questions"
+    },
+    "title": {
+      "type": "text"
+    },
+    "optA": {
+      "type": "text"
+    },
+    "optB": {
+      "type": "text"
+    },
+    "optC": {
+      "type": "text"
+    },
+    "optD": {
+      "type": "text"
+    },
+    "hint": {
+      "type": "text"
+    },
+    "answer": {
+      "type": "string"
     }
   }
 }
