@@ -41,6 +41,9 @@
       "relation": "manyToMany",
       "target": "api::quiz.quiz",
       "inversedBy": "questions"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }
