@@ -15,12 +15,6 @@
     "description": {
       "type": "richtext"
     },
-    "quizzes": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::quiz.quiz",
-      "inversedBy": "questions"
-    },
     "title": {
       "type": "text"
     },
@@ -41,6 +35,12 @@
     },
     "answer": {
       "type": "string"
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::quiz.quiz",
+      "inversedBy": "questions"
     }
   }
 }
