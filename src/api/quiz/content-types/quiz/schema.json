@@ -4,7 +4,7 @@
   "info": {
     "singularName": "quiz",
     "pluralName": "quizzes",
-    "displayName": "quiz",
+    "displayName": "practice",
     "description": ""
   },
   "options": {
@@ -18,11 +18,17 @@
     "description": {
       "type": "text"
     },
+    "exercises": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::exercise.exercise",
+      "inversedBy": "practices"
+    },
     "questions": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::question.question",
-      "mappedBy": "quizzes"
+      "inversedBy": "practices"
     }
   }
 }
