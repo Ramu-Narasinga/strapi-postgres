@@ -29,6 +29,18 @@
       "relation": "manyToMany",
       "target": "api::question.question",
       "inversedBy": "practices"
+    },
+    "readmes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::readme.readme",
+      "inversedBy": "practices"
+    },
+    "solutions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::solution.solution",
+      "inversedBy": "practices"
     }
   }
 }
