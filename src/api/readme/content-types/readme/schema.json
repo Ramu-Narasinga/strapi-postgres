@@ -13,12 +13,6 @@
   "attributes": {
     "description": {
       "type": "richtext"
-    },
-    "practices": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::quiz.quiz",
-      "inversedBy": "readmes"
     }
   }
 }
